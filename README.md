@@ -1,12 +1,8 @@
-# Project No Longer Maintained
+# TJW's maintenance fork; PyPl abandoned
 
-This project lived a long and useful life, but it's been inactive for quite some time and I believe its relevancy has faded.
-
-It will remain here on Github in a read-only, archived state but there will be no more updates.
-
-
-
-
+My additions:
+* An **All** button, requiring "all=1" as an argument to the view.
+* Porting forward to Django 4.0, with help from brandonjschwartz.
 
 [![PyPi version](https://img.shields.io/pypi/v/django-bootstrap-pagination.svg)](https://pypi.python.org/pypi/django-bootstrap-pagination)
 [![PyPi downloads](https://img.shields.io/pypi/dm/django-bootstrap-pagination.svg)](https://pypi.python.org/pypi/django-bootstrap-pagination)
@@ -29,30 +25,22 @@ work seamlessly with Django Page objects. By passing in a Page object and
 one or more optional arguments, Bootstrap pagination bars and pagers can
 be rendered with very little effort.
 
-Compatible with Django **1.2+**
+Compatible with Django **4.0+**
 
 ## Installation
 
-### PIP
-
-This will install the latest stable release from PyPi.
-
-```
-    pip install django-bootstrap-pagination
-```
-
-### Download
-
-Download the latest stable distribution from:
-
-http://pypi.python.org/pypi/django-bootstrap-pagination
-
 Download the latest development version from:
 
-github @ http://www.github.com/jmcclell/django-bootstrap-pagination
+github @ http://www.github.com/teejaydub/django-bootstrap-pagination
 
 ```
     setup.py install
+```
+
+Or put this in your Pipfile if you use Pipenv:
+
+```
+django-bootstrap-pagination = {editable = true, git = "https://github.com/teejaydub/django-bootstrap-pagination.git"}
 ```
 
 ## Usage
